@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <tr>
+        <td>1행 1열</td>
+        <td>1행 2열</td>
+        <td>1행 3열</td>
+    </tr>
+    <tr>
+        <td>2행 1열</td>
+        <td>2행 2열</td>
+        <td>2행 3열</td>
+    </tr>
+    <tr>
+        <td>3행 1열</td>
+        <td>3행 2열</td>
+        <td>3행 3열</td>
+    </tr>
+    <h2>1행의 3개의 셀을 병합 - colspan속성사용</h2>
+    <!--
+    colspan 열과 열을 병합한다. 이때 합쳐진 열의 크기만큼 td태그가 제거되어야 한다.-->
+    <table border="1" width="300">
+        <tr>
+            <td colspan="3">1행1열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td colspan="2">3행 2열</td>
+        </tr>
+    </table>
+
+    <h2>2행2열과 3행2열을 병합 - rowspan속성사용</h2>
+    <!--rowspan:행과 행을 병합할때 사용한다. 이때는 tr사이의 td를 적절히 제거하여야한다.-->
+    <table border="1" width="300">
+        
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td rowspan="2">2행 2열</td>
+            <td>2행 3열</td>
+
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td>3행 3열</td>
+        </tr>
+    </table>
+
+    <table border="1" width="300">
+        <tr>
+            <td rowspan="3">A</td>
+            <td colspan="2">B</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">c</td>
+            <td>D</td>
+            
+        </tr>
+        <tr>
+           
+            
+            
+            <td>E</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
